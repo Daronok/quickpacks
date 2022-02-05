@@ -1,0 +1,2 @@
+execute as @a[nbt={Inventory:[{Slot:100b,id:"minecraft:leather_boots",tag:{display:{color:6192150}}},{Slot:101b,id:"minecraft:leather_leggings",tag:{display:{color:6192150}}},{Slot:102b,id:"minecraft:leather_chestplate",tag:{display:{color:6192150}}},{Slot:103b,id:"minecraft:leather_helmet",tag:{display:{color:6192150}}}]}] at @s run function qp:cactus_camo/cactus
+execute as @a[tag=cactus,scores={cactus=2..}] at @s unless entity @e[tag=cactus_marker,distance=..0] run function qp:cactus_camo/isntcactus
